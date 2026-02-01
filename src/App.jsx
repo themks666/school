@@ -14,7 +14,7 @@ const App = () => {
 			<div className="grow py-8">
 				<Routes>
 					<Route
-						path="/"
+						path="/school"
 						element={<Home></Home>}></Route>
 					<Route
 						path="/contact"
