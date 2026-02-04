@@ -1,4 +1,4 @@
-
+import rabindra from '/rabindra.jpg'
 const AboutUs = () => {
 	const values = [
 		{
@@ -101,8 +101,8 @@ const AboutUs = () => {
 			{/* Principal Message */}
 			<section className="max-w-5xl mx-auto py-20 px-6">
 				<div className="bg-slate-50 p-8 md:p-16 rounded-[3rem] flex flex-col md:flex-row gap-12 items-center">
-					<div className="w-48 h-48 bg-gray-200 rounded-full flex-shrink-0 border-4 border-white shadow-lg">
-						{/* Principal Photo */}
+					<div className="w-48 h-48 bg-gray-200 rounded-full overflow-hidden border-4 border-white shadow-lg">
+						<img src={rabindra} alt="" />
 					</div>
 					<div>
 						<span className="text-purple-600 font-bold uppercase tracking-widest text-sm">
@@ -118,9 +118,9 @@ const AboutUs = () => {
 							passion for excellence and innovation."
 						</p>
 						<p className="font-bold text-[#1a1a4b] text-xl">
-							— Dr. Bishnu poudal
+							— Mr. Rabindra Parajuli
 						</p>
-						<p className="text-gray-500">School Principal & Founder</p>
+						<p className="text-gray-500">School Principal</p>
 					</div>
 				</div>
 			</section>
