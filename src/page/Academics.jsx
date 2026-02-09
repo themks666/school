@@ -1,4 +1,6 @@
-import React from "react";
+import Image1 from "/priamryPhoto.jpg"
+import Image2 from "/middlePhoto.jpg"
+import Image3 from "/secondaryPhoto.jpg"
 import { CheckCircle2, GraduationCap, BookOpen, Microscope } from "lucide-react";
 
 const Academics = () => {
@@ -19,7 +21,7 @@ const Academics = () => {
 			accentBg: "bg-purple-100",
 			dotColor: "bg-purple-500",
 			icon: <GraduationCap className="text-purple-600" />,
-			src: "https://images.unsplash.com/photo-1578349035260-9f3d4042f1f7?w=800&auto=format&fit=crop",
+			src: Image1
 		},
 		{
 			id: "primary",
@@ -37,7 +39,7 @@ const Academics = () => {
 			accentBg: "bg-emerald-100",
 			dotColor: "bg-emerald-500",
 			icon: <BookOpen className="text-emerald-600" />,
-			src: "https://media.istockphoto.com/id/1163985429/photo/group-of-schoolboys-and-schoolgirls-at-school-campus.webp?a=1&b=1&s=612x612&w=0&k=20&c=4EAqHWb6wVmQpZSNFOjWfsFKTM2xPV9KqzeCyJo_6xM=",
+			src: Image2
 		},
 		{
 			id: "secondary",
@@ -55,17 +57,17 @@ const Academics = () => {
 			accentBg: "bg-blue-100",
 			dotColor: "bg-blue-500",
 			icon: <Microscope className="text-blue-600" />,
-			src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&auto=format&fit=crop",
+			src: Image3
 		},
 	];
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
       {/* --- Page Header --- */}
-      <section className="bg-indigo-950 text-white py-24 px-6 text-center rounded-b-[4rem] shadow-2xl">
+      <section className="bg-slate-900 text-white py-12 px-6 text-center rounded-b-[4rem] shadow-2xl">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight">
-            Academic <span className="text-indigo-400">Excellence</span>
+            Academic <span className="text-blue-700 ">Excellence</span>
           </h1>
           <p className="text-xl text-indigo-100/80 leading-relaxed max-w-2xl mx-auto">
             A structured and holistic journey from first steps to graduation, 

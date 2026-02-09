@@ -11,12 +11,12 @@ const Navbar = () => {
 		{ name: "About Us", path: "/about" },
 		{ name: "Programs", path: "/programs" },
 		{ name: "Academics", path: "/academics" },
-		{ name: "Gallary", path: "/gallary" },
+		{ name: "Gallary", path: "/gallery" },
 	];
 
 	return (
 		<nav className="w-full flex justify-center pt-4 sticky top-0 z-50 bg-white/80 backdrop-blur-md">
-			<div className="w-11/12 md:w-10/12 border-b-2 border-gray-100 rounded-xl bg-white/50 px-6 py-4 flex justify-between items-center shadow-sm">
+			<div className="w-11/12 border-b-2 border-gray-100 rounded-xl bg-white/50 py-4 flex justify-between text-lg items-center shadow-sm">
 				<Link
 					to="/"
 					className="flex items-center gap-2">
@@ -25,9 +25,7 @@ const Navbar = () => {
 						alt="School Logo"
 						className="h-10 w-auto"
 					/>
-					<span className="hidden sm:block font-bold text-xl tracking-tight text-slate-800">
-						ACADEMY
-					</span>
+				
 				</Link>
 
 		

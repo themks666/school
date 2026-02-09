@@ -10,7 +10,7 @@ import {
 	Briefcase,
 	Compass,
 } from "lucide-react";
-import Secondary from '/secondary.jpg'
+import Secondary from "/secondary.jpg";
 const SecondaryLevel = () => {
 	const specializedStreams = [
 		{
@@ -28,12 +28,12 @@ const SecondaryLevel = () => {
 			name: "Social Sciences",
 			icon: <Globe className="text-orange-500" />,
 			topics: ["World History", "Political Science", "Sociology"],
-		},
+		}
 	];
 
 	return (
 		<div className="bg-white min-h-screen font-sans">
-			{/* --- Breadcrumb --- */}
+			
 			<div className="max-w-7xl mx-auto px-6 pt-8">
 				<Link
 					to="/programs"
@@ -46,7 +46,7 @@ const SecondaryLevel = () => {
 				</Link>
 			</div>
 
-			{/* --- Hero Section --- */}
+			
 			<header className="max-w-7xl mx-auto px-6 py-12 lg:py-24">
 				<div className="flex flex-col lg:flex-row gap-16 items-center">
 					<div className="lg:w-1/2">
@@ -64,7 +64,6 @@ const SecondaryLevel = () => {
 							specialized subjects, fostering the critical thinking and
 							independence required for university success.
 						</p>
-					
 					</div>
 
 					<div className="lg:w-1/2 relative">
@@ -75,13 +74,13 @@ const SecondaryLevel = () => {
 								className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500"
 							/>
 						</div>
-						{/* Abstract Background Element */}
+					
 						<div className="absolute -top-10 -right-10 w-64 h-64 bg-violet-600/10 rounded-full blur-3xl -z-0"></div>
 					</div>
 				</div>
 			</header>
 
-			{/* --- Academic Streams --- */}
+			
 			<section className="bg-slate-900 py-24 text-white">
 				<div className="max-w-7xl mx-auto px-6 text-center mb-16">
 					<h2 className="text-4xl font-bold mb-4">
@@ -92,28 +91,29 @@ const SecondaryLevel = () => {
 						tracks that align with their long-term goals.
 					</p>
 				</div>
-
-				<div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-					{specializedStreams.map((stream, i) => (
-						<div
-							key={i}
-							className="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition group">
-							<div className="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-								{stream.icon}
+				<div className="flex justify-center w-screen">
+					<div className="max-w-7xl mx-auto w-max px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+						{specializedStreams.map((stream, i) => (
+							<div
+								key={i}
+								className="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition group">
+								<div className="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+									{stream.icon}
+								</div>
+								<h3 className="text-xl font-bold mb-4">{stream.name}</h3>
+								<ul className="space-y-3">
+									{stream.topics.map((topic, j) => (
+										<li
+											key={j}
+											className="text-slate-400 text-sm flex items-center gap-2">
+											<div className="w-1 h-1 bg-violet-500 rounded-full"></div>{" "}
+											{topic}
+										</li>
+									))}
+								</ul>
 							</div>
-							<h3 className="text-xl font-bold mb-4">{stream.name}</h3>
-							<ul className="space-y-3">
-								{stream.topics.map((topic, j) => (
-									<li
-										key={j}
-										className="text-slate-400 text-sm flex items-center gap-2">
-										<div className="w-1 h-1 bg-violet-500 rounded-full"></div>{" "}
-										{topic}
-									</li>
-								))}
-							</ul>
-						</div>
-					))}
+						))}
+					</div>
 				</div>
 			</section>
 		</div>

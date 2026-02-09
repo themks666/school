@@ -1,7 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import Dance from "/dance2.jpg"
-import Art from '/arts.jpg'
+import Dance from "/dance2.jpg";
+import Art from "/arts.jpg";
 import {
 	Palette,
 	Mic,
@@ -70,16 +69,18 @@ const ArtsAndCreativity = () => {
 						<button className="bg-purple-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-purple-700 transition shadow-lg shadow-purple-100">
 							Explore Our Studios
 						</button>
-						<button className="border-2 border-purple-200 text-purple-700 px-8 py-4 rounded-xl font-bold hover:bg-purple-50 transition">
-							View Student Gallery
-						</button>
+						<Link to="/gallery">
+							<button className="border-2 border-purple-200 text-purple-700 px-8 py-4 rounded-xl font-bold hover:bg-purple-50 transition">
+								View Student Gallery
+							</button>
+						</Link>
 					</div>
 				</div>
 
 				<div className="lg:w-1/2 relative">
 					<img
-						src={Art}		
-            alt="Art class"
+						src={Art}
+						alt="Art class"
 						className="w-full h-80 sm:h-[450px] object-cover rounded-[3rem] shadow-2xl relative z-10 border-8 border-white"
 					/>
 
@@ -106,7 +107,6 @@ const ArtsAndCreativity = () => {
 								<p className="text-slate-600 text-sm leading-relaxed">
 									{discipline.description}
 								</p>
-							
 							</div>
 						))}
 					</div>
@@ -151,22 +151,20 @@ const ArtsAndCreativity = () => {
 							alt="Music studio"
 							className="rounded-2xl h-64 w-full object-cover shadow-lg"
 						/>
-				
 					</div>
 				</div>
 			</section>
-			<section className="px-6 pb-20">
-				<div className="max-w-5xl mx-auto bg-purple-600 rounded-[3rem] p-12 text-center text-white relative overflow-hidden">
+			<section className="px-6">
+				<div className="max-w-5xl mx-auto bg-slate-900 rounded-[3rem] p-12 text-center text-white relative overflow-hidden">
 					<div className="relative z-10">
 						<h2 className="text-3xl md:text-5xl font-bold mb-6">
 							Ready to Express Yourself?
 						</h2>
-						<p className="text-purple-100 mb-10 text-lg max-w-xl mx-auto">
+						<p className="text-purple-100 text-lg max-w-xl mx-auto">
 							Discover a world where your imagination has no bounds. Join our
 							creative community today.
 						</p>
-				
-				</div>
+					</div>
 					<div className="absolute top-0 left-0 w-full h-full pattern-dots z-0 opacity-10"></div>{" "}
 				</div>
 			</section>

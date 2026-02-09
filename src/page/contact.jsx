@@ -17,12 +17,12 @@ const ContactUs = () => {
 				</div>
 			</section>
 			<section className="max-w-7xl mx-auto py-10 px-6">
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
-					<div className="bg-[#1a1a4b] text-white p-12 rounded-[3rem] shadow-2xl flex flex-col justify-between">
+				<div className="grid grid-cols-1 lg:grid-cols-2">
+					<div className="bg-[#1a1a4b] text-white p-12 rounded-[3rem] h-max shadow-2xl flex flex-col justify-">
 						<div>
 							<h2 className="text-4xl font-bold mb-10">Contact Information</h2>
 
-							<div className="space-y-10">
+							<div >
 								<ContactDetail
 									icon={<Phone size={24} />}
 									title="Call Us"
@@ -53,14 +53,12 @@ const ContactUs = () => {
 							<div className="text-center group-hover:scale-110 transition-transform">
 								<iframe
 									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d664.9812000044925!2d85.3387402027675!3d27.71797387384369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb196df4429f89%3A0xc4018a99add7eeea!2sNEW%20SUNSHINE%20SECONDARY%20SCHOOL!5e0!3m2!1sen!2snp!4v1770197285741!5m2!1sen!2snp"
-									width="100%"
-									height="100%"
+									className="md:h-72 aspect-video"
 									loading="lazy"></iframe>
 							</div>
 						</div>
 					</div>
 
-					{/* --- Right Side: Minimalist Inquiry Form --- */}
 					<div className="bg-white p-10 md:p-14 rounded-[3rem] border border-slate-100 shadow-xl shadow-slate-200/50">
 						<div className="mb-10">
 							<h3 className="text-3xl font-bold text-[#1a1a4b] mb-2 flex items-center gap-3">

@@ -128,9 +128,7 @@ const Programs = () => {
 						</p>
 
 						<div className="flex flex-col sm:flex-row justify-center gap-6">
-							<button className="bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-5 rounded-2xl font-black transition-all shadow-lg shadow-indigo-900/20 flex items-center justify-center gap-3 active:scale-95">
-								<Calendar size={22} /> Book a Tour
-							</button>
+				
 							<Link to='/contact'>
 								<button className="bg-emerald-500 hover:bg-emerald-600 text-white px-10 py-5 rounded-2xl font-black transition-all shadow-lg shadow-emerald-900/20 flex items-center justify-center gap-3 active:scale-95">
 									<MessageSquare size={22} /> Contact Us

@@ -56,7 +56,7 @@ const App = () => {
 						path="/arts"
 						element={<ArtsAndCreativity></ArtsAndCreativity>}></Route>
 					<Route
-						path="/gallary"
+						path="/gallery"
 						element={<Gallery></Gallery>}></Route>
 				</Routes>
 			</div>

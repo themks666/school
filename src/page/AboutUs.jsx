@@ -97,12 +97,10 @@ const AboutUs = () => {
 					</div>
 				</div>
 			</section>
-
-			{/* Principal Message */}
 			<section className="max-w-5xl mx-auto py-20 px-6">
 				<div className="bg-slate-50 p-8 md:p-16 rounded-[3rem] flex flex-col md:flex-row gap-12 items-center">
-					<div className="w-48 h-48 bg-gray-200 rounded-full overflow-hidden border-4 border-white shadow-lg">
-						<img src={rabindra} alt="" />
+					<div className="max-w-64 aspect-square rounded-full overflow-hidden border-4 border-white shadow-lg">
+						<img src={rabindra} alt="principal photo" />
 					</div>
 					<div>
 						<span className="text-purple-600 font-bold uppercase tracking-widest text-sm">

@@ -148,20 +148,7 @@ const PrimaryEducation = () => {
 							</div>
 						</div>
 
-						<div className="lg:w-2/5 bg-indigo-700/50 p-10 lg:p-20 flex flex-col justify-center border-l border-white/10">
-							<div className="text-center lg:text-left">
-								<h3 className="text-2xl font-bold text-white mb-4">
-									Take the next step
-								</h3>
-								<p className="text-indigo-100 mb-8">
-									Download our primary level prospectus for more detailed
-									information.
-								</p>
-								<button className="w-full bg-white text-indigo-600 py-4 rounded-2xl font-bold hover:bg-slate-100 transition flex items-center justify-center gap-2">
-									Download Prospectus <ArrowRight size={20} />
-								</button>
-							</div>
-						</div>
+					
 					</div>
 				</div>
 			</section>
